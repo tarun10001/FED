@@ -1,0 +1,43 @@
+:root {
+    --gray: rgb(128, 128, 128);
+}
+#main_container {
+    width: 70%;
+    margin: auto;
+}
+.card {
+    height: 380px;
+    width: 300px;
+    float: left;
+    margin: 18px;
+}
+img {
+    width: 300px;
+}
+p {
+    color: var(--gray);
+}
+h4 {
+    color: rgb(81, 36, 95);
+}
+.card_content {
+    padding: 2%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 820px) {
+    #main_container {
+        width: 90%;
+    }
+    .card {
+        width: 45%;
+    }
+    img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 392px) {
+    .card {
+        width: 85%;
+    }
+}
