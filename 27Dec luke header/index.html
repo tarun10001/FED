@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <header>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="nav-left__menu">
+            <i class="fas fa-light fa-bars"></i>
+            <span>Menu</span>
+            <div class="nav-left__med"></div>
+          </div>
+
+          <div class="nav-left__luke-image">
+            <img src="./img/Vector.png" alt="" />
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <ul>
+            <li>
+              <i class="fas fa-light fa-calendar-check"></i>Make an appointment
+            </li>
+            <li><i class="fa fa-usd" aria-hidden="true"></i>Pay a bill</li>
+            <li><i class="fas fa-light fa-gift"></i>Make a gift</li>
+            <li><i class="fas fa-duotone fa-user-tie"></i>Patient login</li>
+            <li><i class="fas fa-regular fa-magnifying-glass"></i></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="pediatrics">
+      <span>Plastic & Reconstructive Surgery</span>
+
+      <div class="search">
+        <form class="example">
+          <input
+            type="text"
+            placeholder="Search.."
+            id="search_input"
+            name="search"
+          />
+          <button><i class="fa fa-search"></i></button>
+
+          <span class="close_search-bar"
+            ><i class="fas fa-regular fa-xmark"></i
+          ></span>
+        </form>
+      </div>
+    </div>
+
+    <div class="overview">
+      <div class="overview__menu-container">
+        <div class="overview__menu-container__inner">
+          <span>Menu</span>
+          <span
+            ><i class="fas fa-light fa-angle-down" id="menu-dropdown"></i
+          ></span>
+        </div>
+      </div>
+
+      <div class="overview__outer">
+        <ul class="overview__inner">
+          <li class="dropdown">
+            <span class="dropdown__dropItem">Overview</span>
+          </li>
+
+          <li class="dropdown">
+            <span class="dropdown__dropItem"
+              >Find Care<i class="fas fa-light fa-angle-down"></i
+            ></span>
+            <div class="dropdown__content">
+              <a>Surgical Services</a>
+              <a>Health Services</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <span class="dropdown__dropItem">
+              Specialities<i class="fas fa-light fa-angle-down"></i>
+            </span>
+            <div class="dropdown__content">
+              <a>Allentown</a>
+              <a>Bethelehem</a>
+              <a>Center Valley</a>
+              <a>Easton</a>
+              <a>Palmerton</a>
+              <a>Quakertown</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <span class="dropdown__dropItem">
+              Impatient Care<i class="fas fa-light fa-angle-down"></i>
+            </span>
+            <div class="dropdown__content">
+              <a> Before & After</a>
+              <a>Patient Stories</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <span class="dropdown__dropItem">Patient Stories</span>
+          </li>
+
+          <li class="dropdown">
+            <span class="dropdown__dropItem">About Us</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidemenu">
+      <div class="sidemenu__background"></div>
+
+      <div class="sidemenu__inner">
+        <div class="sidemenu__lukeclose">
+          <div><img src="./img/Vector.png" alt="" /></div>
+          <div class="close"><i class="fas fa-light fa-xmark"></i></div>
+        </div>
+
+        <div class="sidemenu__call">
+          <h2>Call us at 866-STLUKES</h2>
+        </div>
+
+        <div class="sidemenu__list">
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-user-tie"></i>Patient Login</li>
+            <li>
+              <i class="fa-solid fa-magnifying-glass-location"></i>Find Care
+            </li>
+            <li><i class="fa fa-usd" aria-hidden="true"></i>Pay your Bill</li>
+            <li><i class="fa-solid fa-building"></i>Location</li>
+            <li>
+              <i class="fa-regular fa-calendar-days"></i>Make an Appointment
+            </li>
+            <li>Patient Login</li>
+            <li>Find Care</li>
+            <li>Pay your bBill</li>
+            <li>Location</li>
+            <li>Make an Appointment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper -->
+    <!-- <div class="swiper mySwiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="./img/Pediatric.png" alt="" />
+          <div class="swiper-slide__right-container">
+            <p>St. Luke’s Pediatric Specialty Center</p>
+            <p>
+              The region’s first and only free-standing facility dedicated
+              entirely to caring for kids.
+            </p>
+            <p>Schedule an appointment</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide"><img src="./img/Pediatric.png" alt="" /><div class="swiper-slide__right-container">
+          <p>St. Luke’s Pediatric Specialty Center</p>
+          <p>
+            The region’s first and only free-standing facility dedicated
+            entirely to caring for kids.
+          </p>
+          <p>Schedule an appointment</p>
+        </div></div>
+        <div class="swiper-slide"><img src="./img/Pediatric.png" alt="" /><div class="swiper-slide__right-container">
+          <p>St. Luke’s Pediatric Specialty Center</p>
+          <p>
+            The region’s first and only free-standing facility dedicated
+            entirely to caring for kids.
+          </p>
+          <p>Schedule an appointment</p>
+        </div></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div> -->
+  </body>
+
+
+</html>
+<script src="main.js"></script>

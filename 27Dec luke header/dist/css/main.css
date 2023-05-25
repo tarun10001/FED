@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+header {
+  border-bottom: 1px solid rgb(194, 191, 191);
+  background-color: #fff;
+}
+@media (max-width: 567px) {
+  header .nav-left {
+    justify-content: space-between;
+    width: 69%;
+  }
+  header .nav-left__menu {
+    background-color: #fff !important;
+    font-size: 30px;
+  }
+  header .nav-left__menu span {
+    display: none;
+  }
+  header .nav-left__menu i {
+    color: #0077cd;
+  }
+  header .nav-right li:nth-child(-n+4) {
+    display: none;
+  }
+}
+header .nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-left {
+  display: flex;
+  gap: 10px;
+}
+header .nav-left__menu {
+  background-color: #0077cd;
+  color: white;
+  width: 70px;
+  text-align: center;
+  padding: 8px;
+}
+header .nav-left__menu:hover {
+  cursor: pointer;
+}
+header .nav-left__menu .fa-bars {
+  font-size: 30px;
+}
+header .nav-left__luke-image img {
+  height: 55px;
+}
+header .nav-right ul {
+  display: flex;
+  padding: 0 20px;
+  gap: 30px;
+}
+header .nav-right ul i {
+  padding-right: 6px;
+  color: #0077cd;
+}
+header .nav-right ul .fa-magnifying-glass {
+  font-size: 25px;
+}
+header .nav-right ul li {
+  list-style-type: none;
+  color: rgb(88, 86, 86);
+}
+header .nav-right ul li:hover {
+  color: #0077cd;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pediatrics {
+  font-size: 40px;
+  background-color: #fff;
+  color: #0077cd;
+  padding: 12px 0;
+  border-bottom: 1px solid rgb(201, 197, 197);
+  position: relative;
+}
+.pediatrics span {
+  max-width: 1200px;
+  margin: 0 62px;
+}
+@media (max-width: 567px) {
+  .pediatrics {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .pediatrics span {
+    margin: 0;
+  }
+  .pediatrics .search {
+    height: 120px !important;
+  }
+  .pediatrics .search .example {
+    background-color: #fff;
+    width: 80%;
+  }
+  .pediatrics .search .example input {
+    width: 80%;
+  }
+}
+.pediatrics .search {
+  background-color: rgb(248, 247, 246);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 114px;
+  text-align: center;
+  z-index: 1;
+  display: none;
+}
+.pediatrics .search .example {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 3%;
+}
+.pediatrics .search .example span {
+  padding-left: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.pediatrics .search .example input {
+  font-size: 17px;
+  background-color: #fff;
+  border: 1px solid grey;
+  width: 55%;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+.pediatrics .search .example button {
+  background-color: #fff;
+  float: left;
+  width: 5%;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border: none;
+  cursor: pointer;
+}
+.pediatrics .search .example button i {
+  color: #0077cd;
+}
+.pediatrics .search .example button::hover {
+  background: #0b7dda;
+}
+
+.sidemenu {
+  display: none;
+}
+.sidemenu__background {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+}
+.sidemenu__inner {
+  width: 440px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 567px) {
+  .sidemenu__inner {
+    width: 100%;
+  }
+}
+.sidemenu .close {
+  cursor: pointer;
+}
+.sidemenu__lukeclose {
+  display: flex;
+  background-color: #0077cd;
+  padding: 15px;
+  justify-content: space-between;
+}
+.sidemenu__lukeclose .close {
+  align-items: center;
+  justify-content: center;
+}
+.sidemenu__lukeclose .close i {
+  color: white;
+  font-size: 25px;
+}
+.sidemenu__call {
+  padding: 15px;
+  background-color: rgb(248, 247, 246);
+  color: rgb(75, 74, 74);
+}
+.sidemenu .sidemenu__list {
+  padding: 15px;
+  overflow-y: scroll;
+  height: 550px;
+}
+.sidemenu .sidemenu__list ul li {
+  padding: 15px;
+  list-style-type: none;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(221, 218, 218);
+}
+.sidemenu .sidemenu__list ul li i {
+  color: rgb(233, 158, 19);
+  padding-right: 9px;
+}
+.sidemenu .sidemenu__list ul li:nth-child(-n+5) {
+  color: #0077cd;
+}
+
+.overview {
+  justify-content: space-around;
+  background-color: rgb(248, 247, 246);
+  border-bottom: 1px solid rgb(201, 197, 197);
+}
+.overview__menu-container {
+  display: none;
+  cursor: pointer;
+}
+.overview__inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  max-width: 1200px;
+}
+.overview__inner li {
+  list-style-type: none;
+}
+.overview__inner .dropdown {
+  position: relative;
+  color: rgb(88, 86, 86);
+  font-weight: bold;
+}
+.overview__inner .dropdown:hover .dropdown__content {
+  display: block;
+  cursor: pointer;
+}
+.overview__inner .dropdown__dropItem {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  list-style-type: none;
+  color: rgb(88, 86, 86);
+  font-weight: bold;
+  cursor: pointer;
+}
+.overview__inner .dropdown__dropItem:hover {
+  color: #0077cd;
+}
+.overview__inner .dropdown__dropItem:hover i {
+  padding-left: 10px;
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+.overview__inner .dropdown__dropItem i {
+  padding: 0 10px;
+}
+.overview__inner .dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 37px;
+}
+.overview__inner .dropdown__content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.overview__inner .dropdown__content a:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(177, 177, 65);
+}
+@media (max-width: 567px) {
+  .overview {
+    height: 100vh;
+  }
+  .overview__menu-container {
+    display: block;
+    background-color: #0077cd;
+    padding: 10px;
+  }
+  .overview__menu-container__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+  }
+  .overview__inner {
+    background-color: #fff;
+    width: 85%;
+    margin: auto;
+    display: block;
+    margin-top: -14px;
+  }
+  .overview__inner .dropdown {
+    padding: 20px 0px;
+  }
+  .overview__inner .dropdown i {
+    float: right;
+  }
+  .overview .dropdown__content {
+    position: static;
+    left: 0px;
+    width: 100%;
+    box-shadow: none;
+    margin-top: 5px;
+  }
+  .overview .overview__outer {
+    display: none;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-pagination-bullets span {
+  background: #F05B14;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #0077cd;
+  color: #fff;
+}
+.swiper-slide__right-container {
+  padding: 30px;
+}
+.swiper-slide__right-container p:nth-child(1) {
+  font-size: 37px;
+}
+.swiper-slide__right-container p:nth-child(2) {
+  font-size: 16px;
+  padding: 10px 0;
+}
+.swiper-slide img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */

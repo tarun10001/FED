@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+video[poster] {
+  width: 88%;
+  height: 100%;
+  object-fit: cover;
+}
+.container {
+  position: relative;
+  max-width: 1177px;
+  margin: auto;
+  height: 600px;
+  .btn_container {
+    position: absolute;
+    right: 220px;
+    bottom: 50px;
+    background: none;
+    border: none;
+    gap: 20px;
+    display: flex;
+  }
+
+  #play_icon,
+  #volume_icon {
+    font-size: 35px;
+    color: white;
+  }
+  .play_btn,
+  .mute_btn {
+    border: none;
+    border-radius: 20%;
+    height: 50px;
+    width: 60px;
+    background-color: rgb(64, 173, 237);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
