@@ -1,0 +1,10 @@
+@mixin mobile {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  @mixin ipad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+$heading-color: rgb(105, 41, 102);

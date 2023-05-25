@@ -1,0 +1,90 @@
+@import "./config.scss";
+
+body {
+  background-color: rgb(245, 248, 248);
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1177px;
+  margin: auto;
+
+  .inner_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    .card {
+      background-color: #fff;
+
+      img {
+        width: 100%;
+      }
+
+      .card_content {
+        padding: 15px;
+      }
+
+      small {
+        font-size: 16px;
+        color: $heading-color;
+        font-weight: bold;
+      }
+
+      .card_content_heading1 {
+        color: $heading-color;
+        font-weight: 900;
+        font-size: 15px;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      .card_content_heading2 {
+        font-size: 18px;
+        &:hover {
+          color: $heading-color;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @media screen and (max-width: 820px) {
+      @include ipad;
+    }
+
+    @media screen and (max-width: 421px) {
+      @include mobile;
+    }
+  }
+}
+
+.media_container {
+  margin: auto;
+  position: relative;
+  max-width: 1177px;
+  display: flex;
+
+  &__media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  &__img {
+    width: 100%;
+    height: 450px;
+  }
+}
