@@ -1,0 +1,19 @@
+// Font
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-size:             16px;
+$font-height:           1.5;
+
+// Normal mode
+$color-foreground:      #202020;
+$color-background:      #ECECEC;
+$color-link:            #0050ff;
+
+// Dark mode
+$color-foreground-dark: invert($color-foreground);
+$color-background-dark: invert($color-background);
+$color-link-dark:       invert($color-link);
+
+// Hero
+$hero-white-color: #fff;
+$hero-black-color: #000;
+$hero-blue-color: #0050ff;

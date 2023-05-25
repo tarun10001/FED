@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.operators {
+  width: 40%;
+  margin: auto;
+  background-color: rgb(24, 31, 50);
+  height: 400px;
+}
+button {
+  height: 50px;
+  margin: 6px;
+  font-weight: bolder;
+  border-radius: 9px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(93, 106, 141);
+  color: white;
+  transition: 0.2s;
+}
+.input_screen {
+  height: 50px;
+  width: 60%;
+  margin: auto;
+  border: 3px solid rgb(221, 218, 218);
+  background-color: rgb(24, 31, 50);
+  color: white;
+  text-align: right;
+  font-size: 20px;
+}
+
+.gr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 60%;
+  margin:3% auto;
+}
+.del button{
+  width: 100px;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+.reset {
+  background-color: rgb(59, 70, 100);
+  color: white;
+}

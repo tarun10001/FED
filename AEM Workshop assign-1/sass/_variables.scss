@@ -1,0 +1,28 @@
+// Font
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-size:             16px;
+$font-height:           1.5;
+
+// Normal mode
+$color-foreground:      #202020;
+$color-background:      #ECECEC;
+$color-link:            #0050ff;
+
+// Dark mode
+$color-foreground-dark: invert($color-foreground);
+$color-background-dark: invert($color-background);
+$color-link-dark:       invert($color-link);
+
+// Button
+$btn-hover-color: steelblue;
+
+$colors-opaque: (
+	white: #fff,
+	gray-100: #fafafa,
+	gray-200: #f1f1f1,
+	gray-300: #ebebeb,
+	gray-400: #d7d7d7,
+	gray-500: #ccc,
+	gray-600: #a0a0a0,
+    yellow-200: #ffde7f
+);
