@@ -1,0 +1,149 @@
+@mixin mobile {
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+}
+@mixin ipad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin tablet {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1177px;
+  gap: 30px;
+  margin: auto;
+
+  @media screen and (max-width: 1024px) {
+    @include ipad;
+  }
+
+  @media screen and (max-width: 768px) {
+    @include tablet;
+  }
+  @media screen and (max-width: 480px) {
+    @include mobile;
+  }
+
+  &__card {
+    width: auto;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.modal-body {
+  #ifr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.narrow {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  &__narrow-contain {
+    margin: auto;
+    width: 84%;
+    justify-content: space-around;
+    &__buttons {
+      display: flex;
+      justify-content: center;
+    }
+    &__narrow-reset {
+      width: 40px;
+      font-size: 25px;
+      display: none;
+      color: rgb(8, 71, 98);
+      background-color: #fff;
+      display: none;
+      font-weight: 500;
+      margin-top: 5px;
+      border: none;
+      &:hover {
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.7s;
+      }
+    }
+
+    .narrow__btn {
+      width: 130px;
+      height: 50px;
+      border-radius: 20px;
+      background-color: #fff !important;
+      border: 1px solid gray;
+      color: gray;
+      cursor: pointer;
+    }
+  }
+}
+
+.show_list {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+.cityList-container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 20%;
+  display: none;
+  margin: auto;
+  height: 150px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #e3e5e5;
+    border-radius: 10px;
+  }
+
+  .cityList {
+    text-align: center;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  button {
+    padding: 4%;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    color: gray;
+    width: 242px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(3, 150, 214);
+      transition: 0.6s;
+      color: #fff;
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.show_list {
+  display: block;
+}

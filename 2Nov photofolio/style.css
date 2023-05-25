@@ -1,0 +1,61 @@
+.fa-camera {
+    color: green;
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link,
+.fab,
+p {
+    color: gray;
+}
+
+section {
+    background-color: black;
+}
+
+.footer {
+    border-top: 0.2px solid;
+    margin-top: 18px;
+    border-color: gray;
+    color: white;
+}
+
+.gallery-item {
+    border-radius: 14px;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+}
+
+img {
+    width: 100%;
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#ifr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+
+}
+
+.row {
+    width: 100%;
+}
+.tog {
+    background-color: aliceblue;
+}

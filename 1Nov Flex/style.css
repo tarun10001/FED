@@ -1,0 +1,43 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+#main_container {
+    max-width: 1177px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    border: 1px solid rgb(166, 166, 172);
+    width: 30%;
+    margin: 1%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card_content {
+    padding: 3%;
+    background-color: rgb(229, 229, 229);
+    margin-top: -1%;
+}
+h4 {
+    color: rgb(81, 36, 95);
+}
+img {
+    width: 100%;
+}
+.card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 392px) {
+    #main_container {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .card {
+        width: 40%;
+        margin: 1% auto;
+    }
+}
