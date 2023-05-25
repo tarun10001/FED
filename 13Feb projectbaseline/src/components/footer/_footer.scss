@@ -1,0 +1,68 @@
+.footer {
+  background-color: #793f98;
+  &__footer-container {
+    height: 360px;
+    margin: auto; 
+    max-width: 1024px;
+    @media only screen and (max-width: 413px) {
+      height: 100%;
+    }
+
+    &__top-row {
+      display: flex;
+      justify-content: center;
+      gap: 8rem;
+      @media only screen and (max-width: 413px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+      .social-links {
+        gap: 1rem;
+        display: flex;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+    }
+      ul {
+        
+
+        li {
+            line-height: 32px;
+            list-style: none;
+            color: #fff;
+        }
+        .enterprise, .newsroom {
+            li:nth-child(1) {
+                font-size: 17px;
+                font-weight: bolder;
+            }
+        }
+      }
+    }
+ 
+    &__bottom-row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        &__logo-container {
+         
+          img {
+            // height: 38px;
+            width: 50px;
+            @media only screen and (max-width: 413px) {
+              width: 100px;
+              padding: 1rem;           
+            }
+          }
+        }
+        &__links-wrapper {
+            span {
+                color: #fff;
+            }
+        }
+    }
+  }
+}

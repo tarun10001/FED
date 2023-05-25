@@ -1,0 +1,91 @@
+.partner-section {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  width: 80%;
+  margin: auto;
+  &__content {
+    color: rgb(123, 65, 153);
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    @media only screen and (max-width: 413px) {
+      font-size: 20px;
+    letter-spacing: 1px;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+
+    @media only screen and (max-width: 413px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     }
+
+      img {
+        @media only screen and (max-width: 413px) {
+          width: 100%;
+      }
+     }
+  }
+  &__feature-block {
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 7px;
+    text-align: center;
+    padding: 1rem;
+    margin: 60px auto;
+    max-width: 1024px;
+
+    
+    span {
+      color: rgb(123, 65, 153);
+      font-weight: bolder;
+      font-size: 36px;
+    }
+    &__features {
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+
+      @media only screen and (max-width: 413px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+       }
+      &__feature-left h3,
+      &__feature-middle h3,
+      &__feature-right h3 {
+        font-size: 18px;
+        color: #592975;
+        font-weight: bolder;
+      }
+      .feature-subtitle {
+        font-size: 16px;
+        color: #474747;
+      }
+      &__feature-left,
+      &__feature-middle,
+      &__feature-right {  
+
+        
+    
+
+      img {
+        width: 176px;
+        margin: auto;
+      }
+        a {
+          color: red;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

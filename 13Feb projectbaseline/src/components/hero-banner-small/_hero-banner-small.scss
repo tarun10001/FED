@@ -1,0 +1,70 @@
+.hero-banner-small__main-wrapper {
+  position: relative;
+  // width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  // border: 1px solid;
+
+  &__image {
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background: linear-gradient(
+        45deg,
+        rgba(121, 63, 152, 0.85),
+        rgba(254, 107, 89, 0.85)
+      ),
+      url(https://lh3.googleusercontent.com/wriBwi6yeqB0eLfZhYenY1B2voyZsIjGK3_OzH0bmegLpfEU0qQI4LxLlY-SV7kdd4JmOca-kHmbLxUQfxCb8G863y19-2gtquy9Xw=w1440-rw-v1);
+    @media only screen and (max-width: 413px) {
+      height: 400px;
+      background-repeat: no-repeat;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 6rem;
+    width: 60%;
+    left: 20%;
+    margin: auto;
+    text-align: center;
+    @media only screen and (max-width: 413px) {
+      top: 3rem;
+    }
+    &__joinusBtn {
+      button {
+        width: 270px;
+        background-color: #fff;
+        color: rgb(123, 65, 153);
+        border: none;
+        font-size: 17px;
+        height: 50px;
+        font-weight: bolder;
+        border-radius: 5px;
+        &:hover {
+          color: rgb(123, 65, 153);
+          opacity: 0.8;
+          cursor: pointer;
+          transition: 0.5s;
+        }
+        @media only screen and (max-width: 413px) {
+          height: 40px;
+          width: 200px;
+        }
+      }
+    }
+    h1 {
+      color: #fff;
+      font-size: 36px;
+      line-height: 1;
+      @media only screen and (max-width: 413px) {
+        font-size: 24px;
+      }
+    }
+    h2 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 200;
+    }
+  }
+}

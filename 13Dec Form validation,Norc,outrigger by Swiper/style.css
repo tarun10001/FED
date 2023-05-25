@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+.modal_content2, .modal_content3, img {
+background-color: white;
+}
+img {
+    margin: 42px 0px 42px 93px;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content p,
+.close {
+    background-color: white;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.li {
+    display: flex;
+    gap: 20px;
+}
+
+.main_container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 40px;    
+    background-color: rgb(246, 244, 242);
+}
+
+i {
+    color: rgb(212, 77, 10);
+}
+
+.left_container {
+    padding: 12px;
+    border-radius: 5px;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_container {
+    width: 45%;
+}
+
+.norc {
+    font-size: 60px;
+    color: rgb(77, 75, 75);
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-field {
+    margin-bottom: 5px;
+    padding: 1%;
+    width: 80%;
+}
+
+#username,
+#employeeID {
+    margin: 2% 2% 2% 0;
+}
+
+h2 {
+    color: gray;
+    font-weight: 550;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+input {
+    background-color: white;
+}
+
+.form-field input {
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    width: 90%;
+}
+
+.form-field.error input {
+    border-color: #dc3545;
+
+}
+
+.form-field.error small {
+    display: block;
+}
+
+.form-field.success input {
+    border-color: #28a745;
+}
+
+.form-field small {
+    color: #ffc107;
+    display: none;
+}
+
+.btnT {
+    /* padding: 3%;
+    background-color: #020202;
+    color: white;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bolder; */
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    background-color: #020202;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass {
+    background-color: black;
+    color: white;
+}
+
+.submit {
+    border: 1px solid;
+    display: inline-block;
+    width: 140px;
+    padding: 3%;
+    background-color: #020202;
+    color: white;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.heading {
+    width: 32rem;
+}
+
+.submit:hover {
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.faq {
+    width: 80%;
+    margin: 3% auto;
+    cursor: pointer;
+}
+
+.faq1_heading {
+    font-size: 30px;
+    padding: 1%;
+}
+
+.faq1_para {
+    overflow: hidden;
+    height: 0px;
+}
+
+.faq1.active .faq1_para {
+    height: 80px;
+    transition: 0.8s;
+}
+.faq2 {
+    display: flex;
+    justify-content: space-between;
+}
+.fa-plus {
+    color: black;
+    font-size: 25px;
+}
+
+
+
+/*--- SWIPER ---*/
+.swiper {
+    width: 100%;
+}
+.swiper-slide {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 9px;
+    border: 1px solid rgb(211, 205, 205);
+    background-color: white;
+}
+.out {
+    padding: 1%;
+    width: 90%;
+    margin: auto;
+}
+.out2 {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    color: white !important;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20% 10%;
+}
+.outt2 {
+    color: white;
+}
+.book2 {
+    background-color: transparent;
+    height: 50px;
+    border-color: white;
+    color: white;
+    width: 200px;
+}
+.img1 {
+    height: 540px;
+    position: relative;
+}
+img {
+    height: 300px;
+    margin: auto;
+    width: 100%;
+}
+h2 {
+    color: black;
+}
+small {
+    color: gray;
+}
+h5 {
+    color :gray;
+    font-weight: 200;
+}
+h3 {
+    text-decoration: underline;
+    font-size: 19px;
+}
+.book {
+    font-size: 15px;
+    background-color: white;
+    padding: 5%;
+    cursor: pointer;
+}
+.swiper-button-prev,.swiper-button-next  {
+    border-radius: 50%;
+    padding: 20px;
+    background-color: white;
+}
+.swiper-button-next:hover {
+    padding: 30px;
+    transition: 0.9s;
+}
+
+.swiper-button-prev:hover {
+    padding: 30px;
+    transition: 0.9s;
+}
+
+.swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden;
+}
